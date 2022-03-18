@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #141414;
+}
+.navbar {
+    background: #141414;
+    width: 100%;
+    white-space: nowrap;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+.navbar h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to bottom, #21cbe2 0%, #25dd87 60%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar img {
+    height: 100%;
+    left: 5%;
+    position: absolute;
+}
+.main {
+    margin-bottom: 50px;
+}
+.main h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to bottom, #21cbe2 0%, #25dd87 60%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main h2 {
+    text-align: center;
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to bottom, #ff0000 0%, rgb(204, 0, 0) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main h2[class*="is-toggled"] {
+    background-color: #a39e9d;
+    background-image: linear-gradient(to bottom, #00ff00 0%, #10be00 100%);
+}
+.main p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.main h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: #ff7700;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: -10px;
+}
+.main [class*="-content"] {
+   display: grid;
+   grid: repeat(2, 1fr) / repeat(2, 1fr);
+}
+.krem-content {
+    height: 180px;
+}
+.dekoracja-content {
+    height: 350px;
+}
+.biszkopt-content {
+    height: 480px;
+}
