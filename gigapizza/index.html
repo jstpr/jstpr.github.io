@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="../obrazy/dfds.jpg" type="image/x-icon">
+    <title>MOJA STRONA</title>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="napis" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
+            <h1><img id="menu-arrow" src="./obrazy/expand_more.svg" width="60vw" style="top: 15px; position: relative;">gigapizza</h1>
+            <p style="height: 10px;"></p>
+            <div class="dropdown-content" id="dropdown-content">
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="#about">O Nas</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontakt</a>
+                </li>
+            </div>
+        </div>
+
+        <ul class="navbar__menu">
+            <li class="navbar__item"> 
+                <a href="../home/">dom</a>
+            </li>
+            <li class="navbar__item"> 
+                <a href="../przepis-na-tort/">przepis</a>
+            </li>
+            <li class="navbar__item"> 
+                <a href="../gigapizza/"><b>gigapizza</b></a>
+            </li>
+        </ul>
+        
+    </nav>
+    <div class="main" style="overflow: hidden;">
+        <div class="main__container" style="animation: growLeft 1250ms ease-in-out forwards; transform-origin: center; transition: all 0.3s ease;">
+            <div class="main__content">
+                <center><h1>GIGA PIZZA</h1></center>
+                <h2>Oferujemy NAJWIĘKSZĄ PIZZE NA ŚWIECIE</h2>
+                <p>w niskiej cenie!!</p>
+                <center>
+                    <button class="main__btn" style="width: 500px;" onclick="window.location.href='#menu'"><a href="#menu">Menu</a></button>
+                </center>
+            </div>
+            <div class="main__img--container">
+                <img src="./obrazy/gigapizza.jpg" alt="[OBRAZ] pic" id="main__img"/>
+            </div>
+        </div>
+        <br id="menu"> <br>
+        <div class="main__container" style="right: 10vw; grid-template-columns: 500px 800px; animation: growRight 1250ms ease-in-out forwards; transform-origin: center; transition: all 0.3s ease;">
+            <div class="main__content pizza__menu">
+                <center>
+                    <h1>Menu</h1>
+                    <li id="selected" onclick="menuBtnToggle(this)" class="pizzamenu__btn_active">
+                        <a>Margherita</a>
+                    </li>
+                    <li onclick="menuBtnToggle(this)">
+                        <a>Pepperoni</a>
+                    </li>
+                    <li onclick="menuBtnToggle(this)">
+                        <a>Farmerska</a>
+                    </li>
+                    <li onclick="menuBtnToggle(this)">
+                        <a>Mięsna</a>
+                    </li>
+                    <li onclick="menuBtnToggle(this)">
+                        <a>Capricciosa</a>
+                    </li>
+                    <li onclick="menuBtnToggle(this)">
+                        <a>Supreme</a>
+                    </li>
+                    <li onclick="menuBtnToggle(this)">
+                        <a>Hawajska</a>
+                    </li>
+                </center>
+            </div>
+            <div class="main__img--container">
+                <img src="./obrazy/gigapizza.jpg" alt="[OBRAZ] Margherita" id="main__img Margherita selected_img" class="pizzamenu__active" />
+                <img src="./obrazy/pepperoni.png" alt="[OBRAZ] Pepperoni" id="main__img Pepperoni" class="pizzamenu__inactive" />
+                <img src="./obrazy/farmerska.png" alt="[OBRAZ] Farmerska" id="main__img Farmerska" class="pizzamenu__inactive" />
+                <img src="./obrazy/miesna.png" alt="[OBRAZ] Mięsna" id="main__img Mięsna" class="pizzamenu__inactive" />
+                <img src="./obrazy/capriciosa.png" alt="[OBRAZ] Capricciosa" id="main__img Capricciosa" class="pizzamenu__inactive" />
+                <img src="./obrazy/supreme.png" alt="[OBRAZ] Supreme" id="main__img Supreme" class="pizzamenu__inactive" />
+                <img src="./obrazy/hawajska.png" alt="[OBRAZ] Hawajska" id="main__img Hawajska" class="pizzamenu__inactive" />
+            </div>
+        </div>
+        
+        <!-- <div class="services">
+            <div class="aboutme__container">
+                <div class="aboutme__card">
+                    <h2>Hello, I am 18O4</h2>
+                    <p>On a daily basis I am a gamer, but sometimes I write discord bots in Python.</p>
+                    <button class="main__btn" href=""><a href="/about">More about me</a></button>
+                </div>
+            </div>
+        </div> -->
+
+
+    </div>
+    <div class="footer__container" style="padding-top: 20px;">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items" id="about">
+                    <h2 style="width: 100%; text-align: right;">O Nas</h2>
+                    <p>GigaPIZZA to jedyna pizzeria w Polsce oferująca pizze o średnicy ponad 64cm!</p>
+                </div>
+                <div class="footer__link--items">
+                    <h2 id="contact">Kontakt</h2>
+                    <a>Facebook</a>
+                    <a>Instagram</a>
+                    <a href="mailto:kontakt@jstp.tk">Email</a>
+                    <a>Tel. - +48123456789</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <p class="website__rights">© 2022 jstp. Wszystkie prawa zastrzeżone</p>
+                <div class="social__icons">
+                    <a href="https://www.youtube.com/channel/UCz2aI2aQYYukk1mNb6cYFVg" class="social__icon--link"
+                        target="_blank">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/18O4" class="social__icon--link" target="_blank">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
